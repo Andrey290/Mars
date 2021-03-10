@@ -53,26 +53,29 @@ def form_sample():
                                           <option>Просветлённый</option>
                                         </select>
                                      </div>
-                                    <label>
-                                        Какова Ваша профессия
-                                    </label>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="occupationSelect" name="occupation>
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Программист
+
+                                    <div>
+                                        <label>
+                                            Какова Ваша профессия
                                         </label>
-                                    </div>
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="checkbox" value="" id="occupationSelect" name="occupation>
-                                      <label class="form-check-label" for="flexCheckChecked">
-                                        Робототехник
-                                      </label>
-                                    </div>
-                                    <div class="form-check">
-                                      <input class="form-check-input" type="checkbox" value="" id="occupationSelect" name="occupation">
-                                      <label class="form-check-label" for="flexCheckChecked">
-                                        Переводчик с китайского(中文翻译)
-                                      </label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="occupationSelect" name="occupation>
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Программист
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="occupationSelect" name="occupation>
+                                          <label class="form-check-label" for="flexCheckChecked">
+                                            Робототехник
+                                          </label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="occupationSelect" name="occupation">
+                                          <label class="form-check-label" for="flexCheckChecked">
+                                            Переводчик с китайского(中文翻译)
+                                          </label>
+                                        </div>
                                     </div>
 
                                     <div class="form-group">
@@ -97,12 +100,6 @@ def form_sample():
                                           <input class="form-check-input" type="radio" name="gender" id="female" value="female">
                                           <label class="form-check-label" for="female">
                                             Женский
-                                          </label>
-                                        </div>
-                                        <div class="form-check">
-                                          <input class="form-check-input" type="radio" name="gender" id="mechanic" value="mechanic">
-                                          <label class="form-check-label" for="mechanic">
-                                            Киборг
                                           </label>
                                         </div>
                                     </div>
