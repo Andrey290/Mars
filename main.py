@@ -56,6 +56,10 @@ def choice(planet_name):
                 </html>'''
 
 
+@app.route('/results/<nickname>/<int:level>/<float:rating>')
+def results(nickname, level, rating):
+    return
+
 @app.route('/promotion_image')
 def promotion_image():
     return render_template('base.html')
