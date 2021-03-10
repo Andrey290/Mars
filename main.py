@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 @app.route('/index')
 def index():
-    return "/promotion_image"
+    return "<h1>/promotion_image</h1> <h1>/form_sample</h1>"
 
 
 @app.route('/promotion_image')
@@ -53,17 +53,27 @@ def form_sample():
                                           <option>Просветлённый</option>
                                         </select>
                                      </div>
-
-                                    <div class="form-group">
-                                        <label for="classSelect">Какова Ваша профессия</label>
-                                        <select class="form-control" id="occupationSelect" name="occupation">
-                                          <option>Программист</option>
-                                          <option>Робототехник</option>
-                                          <option>Переводчик с китайского(中文翻译)</option>
-                                          <option>Автопилот</option>
-                                          <option>Абитуриент МАИ</option>
-                                        </select>
-                                     </div>
+                                    <label>
+                                        Какова Ваша профессия
+                                    </label>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="occupationSelect" name="occupation>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Программист
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="occupationSelect" name="occupation>
+                                      <label class="form-check-label" for="flexCheckChecked">
+                                        Робототехник
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <input class="form-check-input" type="checkbox" value="" id="occupationSelect" name="occupation">
+                                      <label class="form-check-label" for="flexCheckChecked">
+                                        Переводчик с китайского(中文翻译)
+                                      </label>
+                                    </div>
 
                                     <div class="form-group">
                                         <label for="why">Почему?</label>
