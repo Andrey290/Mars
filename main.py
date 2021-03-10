@@ -1,7 +1,4 @@
 from flask import Flask, render_template, request, url_for
-import os
-import sys
-from PIL import Image
 
 app = Flask(__name__)
 
