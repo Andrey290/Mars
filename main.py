@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, url_for
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -173,7 +173,7 @@ def form_sample():
                                 <label for="photo">Выберите файл</label>
                                 <input type="file" class="form-control-file" id="photo" name="file">
                             </div>
-                            <img src="{url_for('static', filename='img/image.jpg')}" alt="">
+                            <button type="submit" class="btn btn-primary">Отправить</button>
                         </div>
                 
                         <div class="form-group">
@@ -205,10 +205,6 @@ def form_sample():
         print("Фамилия", request.form['family_name'])
         print("Имя", request.form['name'])
         print("Статус образованности", request.form['education'])
-
-        f = request.files['file'] # тут я получаю файл
-        a = f.read() # тут я его читаю
-        a.save("static/img/image.jpg") # тут сохраняю
 
         print("Почему", request.form['why'])
         print("Пол", request.form['gender'])
