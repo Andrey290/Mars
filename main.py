@@ -19,6 +19,9 @@ def index():
                     <p>
                         /results/<nickname>/<int:level>/<float:rating>
                     </p>
+                    <p>
+                        /load_photo
+                    </p>
                 </body>'''
 
 
@@ -210,6 +213,7 @@ def form_sample():
         print("Согласен", request.form['accept'])
         return "Форма отправлена"
 
+
 @app.route('/load_photo')
 def load_photo():
     if request.method == 'GET':
@@ -238,9 +242,12 @@ def load_photo():
                         </html>'''
     elif request.method == 'POST':
         f = request.files['file']
-        print(f.read())
-        # как на этом моменте сохранить изображение?
-        return "Форма отправлена"
+        content = f.read()
+        file = open('static/img/image.jpg', 'w')
+        file.write(content)
+        file.close()
+        return f'''<img src="{url_for('static', filename='img/image.jpg')}" alt="vb mbvnv">'''
+
 
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
